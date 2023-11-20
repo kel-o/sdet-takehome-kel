@@ -52,6 +52,7 @@ The rack server runs on localhost:9292
 
 
 **As the Provider**
+
 The user-service application feeds the dashboard-api data about a user when requested. This means the user-service is the provider.
 
 _To run an e2e test, run the following command:_
