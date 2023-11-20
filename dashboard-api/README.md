@@ -1,3 +1,23 @@
+# How to test contracts locally
+
+After starting docker containers as described in root README, run the following command in their respective directories to create pacts and run tests.
+
+**From the dashboard-api directory**
+```
+$ bundle exec rake consumer_spec
+```
+This will create the pact (contract specifications between dashboard-api consumer and the user-service provider)
+
+
+**From the pact_broker directory**
+```
+$ bundle exec rackup
+```
+This will start the rack server which hosts the pact broker , the pact acts as an intermediary between the two services and is the glue that makes the contract test come together. It is the shared contract created by running the consumer spec, and honored by the user-service provider. 
+
+
+
+
 # API Documentation
 
 ## Summary Endpoint
