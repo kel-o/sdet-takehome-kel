@@ -13,10 +13,12 @@ Access the "Summary Dashboard" by visiting this URL in a browser:
 
    
 # Running Cypress
+
 To run api tests against these services, perform the following actions 
 
 **Run cypress api tests**
-_From cypress directory_
+
+_From `cypress` directory_
 
 install packages and dependencies
 ```
@@ -36,13 +38,13 @@ The dashboard-api by definition is the consumer of our contract tests. It fetche
 
 To create a pact, run the following command:
 
-_From the dashboard-api directory_
+_From the `dashboard-api` directory_
 ```
 $ bundle exec rake consumer_spec
 ```
 This will create the pact, which are the contract specifications between dashboard-api consumer and the user-service provider. (ie. When I send a request with foo in the body then I shold expect a response with bar in the body)
 
-_From the pact_broker directory_
+_From the `dasboard-api/pact_broker` directory_
 ```
 $ bundle exec rackup
 ```
