@@ -1,5 +1,17 @@
 [< Back to Assignment](../README.md)
 
+
+## How to Contract Test Provider Locally
+The `user-service` application feeds the `dashboard-api` data about a user when requested. This means the `user-service` is the provider and the `dashboard-api` service is the consumer.
+
+To run an e2e test, run the following command:
+```
+$ bundle exec rake pact:verify:dashboard-api_and_user-service_contract_using_local_broker
+```
+
+This will generate a pact as the consumer if one does not already exist and it will run the pact as the provider.
+
+
 ## Users (Ruby on Rails)
 This service stores information about a user.
 
