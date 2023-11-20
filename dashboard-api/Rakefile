@@ -1,0 +1,15 @@
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require_relative "config/application"
+
+load 'consumer/Rakefile'
+load '/Users/kelokekpe/src/services-takehome/user-service/lib/provider/Rakefile'
+
+task 'pact:e2e' => ['spec', 'pact:verify:foobar']
+task 'pact:e2e:local' => ['spec', 'pact:verify:foobar_using_local_broker']
+task 'pact:e2e:remote' => ['spec', 'pact:verify:foobar_using_remote_broker']
+
+task :default => 'pact:e2e'
+
+# Rails.application.load_tasks

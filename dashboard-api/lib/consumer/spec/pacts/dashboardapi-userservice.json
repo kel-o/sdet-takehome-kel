@@ -1,0 +1,47 @@
+{
+  "consumer": {
+    "name": "DashboardApi"
+  },
+  "provider": {
+    "name": "UserService"
+  },
+  "interactions": [
+    {
+      "description": "a fetch user request",
+      "request": {
+        "method": "get",
+        "path": "/users/1",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": "1",
+          "first_name": "Michael",
+          "last_name": "Scott"
+        },
+        "matchingRules": {
+          "$.body.id": {
+            "match": "type"
+          },
+          "$.body.first_name": {
+            "match": "type"
+          },
+          "$.body.last_name": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

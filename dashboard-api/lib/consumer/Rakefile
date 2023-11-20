@@ -1,0 +1,5 @@
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new('consumer_spec') do | task |
+  task.pattern = "/Users/kelokekpe/src/services-takehome/dashboard-api/lib/consumer/spec/user_service_client_spec.rb"
+end
