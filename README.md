@@ -1,4 +1,4 @@
-# Engineering Take Home Exercise
+# SDET Take Home Exercise
 
 Welcome to the Calendly Take Home assignment! This exercise will focus on testing a Service Oriented Architecture (SOA).
 
@@ -11,6 +11,11 @@ docker compose up --build
 
 Access the "Summary Dashboard" by visiting this URL in a browser: 
  - [http://localhost:8000/summary/1](http://localhost:8000/summary/1)
+
+# Objectives
+
+- Write automated tests for the critical API endpoints of each microservice (Billing, Calendar, User).
+- Implement contract tests validating the requests and responses against their defined contracts (Swagger/OpenAPI specifications).
 
 # Services
 
