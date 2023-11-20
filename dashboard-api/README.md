@@ -1,5 +1,4 @@
-# How to test contracts locally
-
+# Local Consumer Test Setup 
 After starting docker containers as described in root README, run the following commands in their respective directories to create pacts and run tests.
 
 The `dashboard-api` by definition is the consumer of our contract tests. It fetches user data from the `user-service` and displays it on the `/summarys` page.
