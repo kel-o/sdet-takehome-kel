@@ -1,6 +1,7 @@
 # How to run submission
 
 # Starting Services
+To start the services that these tests will run against, peform the following actions
 
 _From root directory, run the following command:_
 ```
@@ -12,6 +13,7 @@ Access the "Summary Dashboard" by visiting this URL in a browser:
 
    
 # Running Cypress
+To run api tests against these services, perform the following actions 
 
 **Run cypress api tests**
 _From cypress directory_
@@ -26,6 +28,7 @@ $ npx cypress run
 ```
 
 # Running Contract Tests
+To setup pacts, start local pact broker and run contract tests between two services, perform the following actions
 
 **As the Consumer**
 
