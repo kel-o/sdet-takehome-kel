@@ -16,7 +16,8 @@ Retrieves summary of user's profile information, past and upcoming meetings with
 
 ## Parameters
 
-|Parameter|  Data Type  | Required | Description						   |
+|Parameter    |  Data Type     | Required     | Description						      |
+
 | user_id     |     integer    |      Yes     | Unique Identifier of a User |
 
 
